@@ -12,7 +12,7 @@ _banner () {
 _auth () {
   read -p "[~] KEY: " key
 
-  res=(`curl --silent http://api.kieredev.shop/client/auth -d "_key=$key" -H "X-Parse-id: 3028377422"`)
+  res=(`curl --silent http://api.kiredev.shop/client/auth -d "_key=$key" -H "X-Parse-id: 3028377422"`)
 
   [[ `echo -e $res | grep -E -i -w "invalid_request"` ]] && echo -e "\033[31mHay un erro en la solicitud\033[0m"
 
